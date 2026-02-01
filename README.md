@@ -77,94 +77,14 @@ This project implements a **production-grade automated testing framework** for t
 
 ---
 
-## 🏗️ System Architecture
+ 
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                     Test Execution Flow                      │
-└─────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│  1. TEST INITIALIZATION                                     │
-│     ├─ Launch Chromium Browser (Headless/Headed)           │
-│     ├─ Navigate to https://www.swifttranslator.com/        │
-│     ├─ Wait for Network Idle State                         │
-│     └─ Locate DOM Elements (Input/Output Fields)           │
-└─────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│  2. TEST EXECUTION LOOP                                     │
-│     ├─ Load Test Data (Input/Expected Output)              │
-│     ├─ Clear Previous Input State                          │
-│     ├─ Input Singlish Text via Automation                  │
-│     ├─ Wait 4s for Real-time Translation                   │
-│     ├─ Capture Actual Sinhala Output                       │
-│     └─ Log Test Context (Input/Expected/Actual)            │
-└─────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│  3. VALIDATION & ASSERTION                                  │
-│     ├─ String Comparison (Expected vs Actual)              │
-│     ├─ Character-level Accuracy Check                      │
-│     ├─ Screenshot Capture (Pass/Fail)                      │
-│     ├─ Video Recording Storage                             │
-│     └─ Trace Generation (On Failure)                       │
-└─────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│  4. REPORTING & CLEANUP                                     │
-│     ├─ Aggregate Test Results (Pass/Fail/Skip)             │
-│     ├─ Generate HTML Report with Visuals                   │
-│     ├─ Store Artifacts (Screenshots/Videos/Traces)         │
-│     ├─ Console Summary Output                              │
-│     └─ Browser Context Cleanup                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-### 🔄 Test Suite Categories
-
-```
-📦 Test Suite Architecture
-│
-├── 🟢 Positive Functional Tests (25 Cases)
-│   ├── Simple sentence translation
-│   ├── Compound sentence structures
-│   ├── Different tenses (past/present/future)
-│   ├── Question & command forms
-│   ├── Greetings & expressions
-│   ├── Mixed language content
-│   ├── Technical terminology
-│   └── Date/currency formats
-│
-├── 🔴 Negative Functional Tests (11 Cases)
-│   ├── Joined words without spaces
-│   ├── Extra-long paragraphs (300+ chars)
-│   ├── Multiple consecutive spaces
-│   ├── Multi-line input with breaks
-│   ├── Complex slang expressions
-│   ├── Special character handling
-│   ├── Uppercase text processing
-│   └── Heavy code-switching scenarios
-│
-└── 🔵 UI Behavior Tests (6 Cases)
-    ├── Real-time translation updates
-    ├── Clear/Delete button functionality
-    ├── Copy to clipboard operation
-    ├── Language swap mechanism
-    ├── Character count display
-    └── Input/Output field visibility
-```
-
----
+ 
 
 ## 📁 Project Structure
 
 ```
-singlish-translator-testing-IT23822658/
+ITPM/
 │
 ├── 📂 tests/                           # Test suite directory
 │   ├── 📄 positive-functional.spec.js  # 25 positive test cases
@@ -188,18 +108,12 @@ singlish-translator-testing-IT23822658/
 │   ├── data/                           # Report data files
 │   └── assets/                         # Report assets (CSS/JS)
 │
-├── 📂 .github/                         # CI/CD workflows
-│   └── workflows/
-│       └── test.yml                    # Automated test execution
-│
 ├── 📄 playwright.config.js             # Playwright configuration
 ├── 📄 package.json                     # Project dependencies
 ├── 📄 package-lock.json                # Dependency lock file
 ├── 📄 .gitignore                       # Git ignore rules
 ├── 📄 README.md                        # This documentation
-└── 📄 LICENSE                          # Project license
-```
-
+ 
 ---
 
 ## ✅ Prerequisites
@@ -342,8 +256,7 @@ Examples:
 - Update documentation accordingly
 - Follow existing code style
 - Ensure all tests pass before PR
-
----
+ 
 
 ## 👨‍💻 Author
 
@@ -359,11 +272,10 @@ Examples:
 **Module**: IT3040 - Information Technology Project Management  
 **Assignment**: Assignment 1 - Automated Testing Project
 
----
+ 
 
 📧 **Email**: [IT23822658@my.sliit.lk](mailto:IT23822658@my.sliit.lk)  
-🔗 **LinkedIn**: [Connect with me](https://linkedin.com/in/yourprofile)  
-🐙 **GitHub**: [@yourusername](https://github.com/yourusername)
+🐙 **GitHub**: [@Imesh-Bandar](https://github.com/Imesh-Bandar)
 
 </div>
 
@@ -386,9 +298,8 @@ Unauthorized commercial use is prohibited.
 
 ### Need Help?
 
-- 💬 **Issues**: [GitHub Issues](https://github.com/yourusername/singlish-translator-testing-IT23822658/issues)
-- 📧 **Email**: IT23822658@my.sliit.lk
-- 📚 **Documentation**: [Wiki](https://github.com/yourusername/singlish-translator-testing-IT23822658/wiki)
+-  **Email**: IT23822658@my.sliit.lk
+ 
 
 ---
 
@@ -407,6 +318,6 @@ Unauthorized commercial use is prohibited.
 
 **Last Updated**: December 2024 | **Version**: 2.0.0 | **Status**: ✅ Production Ready
 
-Made with ❤️ by [S.A.I.B. Dharmasiri](https://github.com/yourusername)
+Made with ❤️ by [S.A.I.B. Dharmasiri](https://github.com/Imesh-Bandar)
 
 </div>
