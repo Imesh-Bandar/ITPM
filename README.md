@@ -18,22 +18,18 @@
 ## 📋 Table of Contents
 
 - [Overview](#-overview)
-- [Key Features](#-key-features)
 - [Technology Stack](#-technology-stack)
-- [System Architecture](#-system-architecture)
 - [Project Structure](#-project-structure)
 - [Prerequisites](#-prerequisites)
 - [Installation & Setup](#-installation--setup)
 - [Usage & Execution](#-usage--execution)
 - [Test Case Documentation](#-test-case-documentation)
-- [Configuration](#-configuration)
-- [Test Reports & Artifacts](#-test-reports--artifacts)
-- [CI/CD Integration](#-cicd-integration)
-- [Troubleshooting](#-troubleshooting)
 - [Best Practices](#-best-practices)
 - [Contributing](#-contributing)
 - [Author](#-author)
 - [License](#-license)
+- [Support & Contact](#-support--contact)
+- [Acknowledgments](#-acknowledgments)
 
 ---
 
@@ -43,43 +39,52 @@ This project implements a **production-grade automated testing framework** for t
 
 ### 🎓 Academic Context
 
-**Name**: S.A.I.B. Dharmasiri  
-**Student ID**: IT23822658  
-**Module**: IT3040 - Information Technology Project Management (ITPM)  
-**Assignment**: Assignment 1 - Automated Testing Project  
-**Academic Year**: 2026  
-**Batch**: Weekend Batch - Year 3
+<div align="center">
+
+| Field              | Details                                                    |
+|--------------------|-------------------------------------------------------------|
+| **Name**           | S.A.I.B. Dharmasiri                                        |
+| **Student ID**     | IT23822658                                                 |
+| **Module**         | IT3040 - Information Technology Project Management (ITPM) |
+| **Assignment**     | Assignment 1 - Automated Testing Project                   |
+| **Academic Year**  | 2026                                                       |
+| **Batch**          | Weekend Batch - Year 3                                     |
+
+</div>
 
 ### 🔬 Testing Scope
 
-- ✅ **25 Positive Functional Tests** - Core translation validation
-- ⚠️ **11 Negative/Edge Case Tests** - Boundary & error handling
-- 🖥️ **6 UI Behavior Tests** - Interface interaction validation
-- 📊 **100% Coverage** of critical user workflows
+<div align="center">
 
- 
+| Test Type                  | Count | Coverage Area                    |
+|----------------------------|-------|----------------------------------|
+| ✅ Positive Functional     | 25    | Core translation validation      |
+| ⚠️ Negative/Edge Case      | 11    | Boundary & error handling        |
+| 🖥️ UI Behavior            | 6     | Interface interaction validation |
+| 📊 Total Coverage          | 42    | 100% of critical workflows       |
 
- 
+</div>
+
 ---
 
 ## 🛠️ Technology Stack
 
-| Category | Technology | Version | Purpose |
-|----------|-----------|---------|---------|
-| **Testing Framework** | Playwright | v1.40+ | Browser automation & testing |
-| **Runtime** | Node.js | v14+ | JavaScript execution environment |
-| **Language** | JavaScript | ES6+ | Test script development |
-| **Test Runner** | Playwright Test | Latest | Test orchestration & execution |
-| **Reporter** | HTML Reporter | Built-in | Visual test result presentation |
-| **Browser Engine** | Chromium | Latest | Test execution browser |
-| **Package Manager** | npm | v6+ | Dependency management |
-| **Version Control** | Git | Latest | Source code management |
+<div align="center">
+
+| Category                | Technology       | Version | Purpose                          |
+|-------------------------|------------------|---------|----------------------------------|
+| **Testing Framework**   | Playwright       | v1.40+  | Browser automation & testing     |
+| **Runtime**             | Node.js          | v14+    | JavaScript execution environment |
+| **Language**            | JavaScript       | ES6+    | Test script development          |
+| **Test Runner**         | Playwright Test  | Latest  | Test orchestration & execution   |
+| **Reporter**            | HTML Reporter    | Built-in| Visual test result presentation  |
+| **Browser Engine**      | Chromium         | Latest  | Test execution browser           |
+| **Package Manager**     | npm              | v6+     | Dependency management            |
+| **Version Control**     | Git              | Latest  | Source code management           |
+
+</div>
 
 ---
-
- 
-
- 
 
 ## 📁 Project Structure
 
@@ -112,22 +117,27 @@ ITPM/
 ├── 📄 package.json                     # Project dependencies
 ├── 📄 package-lock.json                # Dependency lock file
 ├── 📄 .gitignore                       # Git ignore rules
-├── 📄 README.md                        # This documentation
- 
+└── 📄 README.md                        # This documentation
+```
+
 ---
 
 ## ✅ Prerequisites
 
 ### System Requirements
 
-| Requirement | Minimum Version | Recommended | Purpose |
-|-------------|----------------|-------------|---------|
-| **Node.js** | v14.0.0 | v18.0.0+ | JavaScript runtime |
-| **npm** | v6.0.0 | v9.0.0+ | Package manager |
-| **RAM** | 4 GB | 8 GB | Test execution |
-| **Disk Space** | 500 MB | 1 GB | Dependencies & artifacts |
-| **Internet** | Stable | High-speed | Live website access |
-| **OS** | Windows 10/macOS 10.15/Ubuntu 18.04 | Latest | Cross-platform support |
+<div align="center">
+
+| Requirement     | Minimum Version               | Recommended  | Purpose                     |
+|-----------------|-------------------------------|--------------|------------------------------|
+| **Node.js**     | v14.0.0                       | v18.0.0+     | JavaScript runtime           |
+| **npm**         | v6.0.0                        | v9.0.0+      | Package manager              |
+| **RAM**         | 4 GB                          | 8 GB         | Test execution               |
+| **Disk Space**  | 500 MB                        | 1 GB         | Dependencies & artifacts     |
+| **Internet**    | Stable                        | High-speed   | Live website access          |
+| **OS**          | Windows 10/macOS/Ubuntu 18.04 | Latest       | Cross-platform support       |
+
+</div>
 
 ### Software Dependencies
 
@@ -181,7 +191,8 @@ npx playwright install
 # Verify browser installation
 npx playwright --version
 ```
- 
+
+---
 
 ## 💻 Usage & Execution
 
@@ -203,7 +214,7 @@ npm run test:ui          # 6 UI tests
 npm run report
 ```
 
- 
+---
 
 ## 📚 Test Case Documentation
 
@@ -217,25 +228,38 @@ Examples:
 - Neg_Fun_0001: Negative Functional Test Case #1
 - Pos_UI_0001: Positive UI Test Case #1
 ```
- 
+
+---
 
 ## 📖 Best Practices
 
 ### Writing New Tests
 
-1. **Follow Naming Convention**: Use descriptive test names
-2. **Add Comments**: Explain complex logic
-3. **Use Page Objects**: Encapsulate UI interactions
-4. **Avoid Hard Waits**: Use `waitFor` methods
-5. **Clean Up**: Close contexts and browsers properly
+<div align="center">
+
+| Best Practice              | Description                            |
+|----------------------------|----------------------------------------|
+| **Follow Naming Convention** | Use descriptive test names           |
+| **Add Comments**            | Explain complex logic                 |
+| **Use Page Objects**        | Encapsulate UI interactions           |
+| **Avoid Hard Waits**        | Use `waitFor` methods                 |
+| **Clean Up**                | Close contexts and browsers properly  |
+
+</div>
 
 ### Test Maintenance
 
-- 🔄 Regular dependency updates
-- 📝 Keep documentation synchronized
-- 🧹 Remove obsolete test cases
-- 📊 Monitor test execution times
-- 🎯 Maintain test independence
+<div align="center">
+
+| Task                          | Description                           |
+|-------------------------------|---------------------------------------|
+| 🔄 Regular Updates            | Keep dependencies up to date          |
+| 📝 Documentation Sync         | Maintain current documentation        |
+| 🧹 Remove Obsolete Tests      | Clean up outdated test cases          |
+| 📊 Monitor Performance        | Track test execution times            |
+| 🎯 Maintain Independence      | Ensure tests don't depend on others   |
+
+</div>
 
 ---
 
@@ -243,20 +267,33 @@ Examples:
 
 ### How to Contribute
 
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/AmazingFeature`)
-3. **Commit** your changes (`git commit -m 'Add some AmazingFeature'`)
-4. **Push** to the branch (`git push origin feature/AmazingFeature`)
-5. **Open** a Pull Request
+<div align="center">
+
+| Step | Action                                                              |
+|------|---------------------------------------------------------------------|
+| 1    | **Fork** the repository                                             |
+| 2    | **Create** a feature branch (`git checkout -b feature/AmazingFeature`) |
+| 3    | **Commit** your changes (`git commit -m 'Add some AmazingFeature'`)    |
+| 4    | **Push** to the branch (`git push origin feature/AmazingFeature`)      |
+| 5    | **Open** a Pull Request                                             |
+
+</div>
 
 ### Contribution Guidelines
 
-- Write clear commit messages
-- Add tests for new features
-- Update documentation accordingly
-- Follow existing code style
-- Ensure all tests pass before PR
- 
+<div align="center">
+
+| Guideline                | Description                           |
+|--------------------------|---------------------------------------|
+| 📝 Clear Commit Messages | Write descriptive commit messages     |
+| ✅ Add Tests             | Include tests for new features        |
+| 📚 Update Documentation  | Keep docs synchronized                |
+| 🎨 Follow Code Style     | Maintain existing conventions         |
+| 🧪 Pass All Tests        | Ensure tests pass before PR           |
+
+</div>
+
+---
 
 ## 👨‍💻 Author
 
@@ -264,15 +301,16 @@ Examples:
 
 ### S.A.I.B. Dharmasiri
 
-**Student ID**: IT23822658  
-**Program**: BSc (Hons) Information Technology - Year 3  
-**Batch**: Weekend Batch  
-**Institution**: Sri Lanka Institute of Information Technology (SLIIT)
+| Field           | Details                                                    |
+|-----------------|-------------------------------------------------------------|
+| **Student ID**  | IT23822658                                                 |
+| **Program**     | BSc (Hons) Information Technology - Year 3                 |
+| **Batch**       | Weekend Batch                                              |
+| **Institution** | Sri Lanka Institute of Information Technology (SLIIT)      |
+| **Module**      | IT3040 - Information Technology Project Management         |
+| **Assignment**  | Assignment 1 - Automated Testing Project                   |
 
-**Module**: IT3040 - Information Technology Project Management  
-**Assignment**: Assignment 1 - Automated Testing Project
-
- 
+---
 
 📧 **Email**: [IT23822658@my.sliit.lk](mailto:IT23822658@my.sliit.lk)  
 🐙 **GitHub**: [@Imesh-Bandar](https://github.com/Imesh-Bandar)
@@ -283,6 +321,8 @@ Examples:
 
 ## 📄 License
 
+<div align="center">
+
 This project is developed for **educational purposes** as part of SLIIT IT3040 coursework.
 
 ```
@@ -292,23 +332,36 @@ This software is provided for educational purposes only.
 Unauthorized commercial use is prohibited.
 ```
 
+</div>
+
 ---
 
 ## 📞 Support & Contact
 
 ### Need Help?
 
--  **Email**: IT23822658@my.sliit.lk
- 
+<div align="center">
+
+| Contact Method | Details                    |
+|----------------|----------------------------|
+| 📧 Email       | IT23822658@my.sliit.lk    |
+
+</div>
 
 ---
 
 ## 🏆 Acknowledgments
 
-- **SLIIT Faculty** - Project guidance and support
-- **Playwright Team** - Excellent testing framework
-- **SwiftTranslator** - Translation system under test
-- **Open Source Community** - Inspiration and resources
+<div align="center">
+
+| Entity                      | Contribution                          |
+|-----------------------------|---------------------------------------|
+| **SLIIT Faculty**           | Project guidance and support          |
+| **Playwright Team**         | Excellent testing framework           |
+| **SwiftTranslator**         | Translation system under test         |
+| **Open Source Community**   | Inspiration and resources             |
+
+</div>
 
 ---
 
@@ -316,7 +369,13 @@ Unauthorized commercial use is prohibited.
 
 **⭐ Star this repository if you find it helpful!**
 
-**Last Updated**: December 2024 | **Version**: 2.0.0 | **Status**: ✅ Production Ready
+---
+
+| Version | Status              | Last Updated  |
+|---------|---------------------|---------------|
+| 2.0.0   | ✅ Production Ready | December 2024 |
+
+---
 
 Made with ❤️ by [S.A.I.B. Dharmasiri](https://github.com/Imesh-Bandar)
 
