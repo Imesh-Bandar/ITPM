@@ -373,7 +373,7 @@ Unauthorized commercial use is prohibited.
 
 | Version | Status              | Last Updated  |
 |---------|---------------------|---------------|
-| 2.0.0   | ✅ Production Ready | December 2024 |
+| 2.0.0   | ✅ Production Ready | December 2026 |
 
 ---
 
