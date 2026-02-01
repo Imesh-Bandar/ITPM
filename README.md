@@ -267,17 +267,7 @@ npx playwright install
 # Verify browser installation
 npx playwright --version
 ```
-
-### Step 4: Verify Setup
-
-```bash
-# Run a quick verification test
-npm test -- --grep="Pos_Fun_0001"
-
-# Expected output: 1 test passed
-```
-
----
+ 
 
 ## 💻 Usage & Execution
 
@@ -299,47 +289,7 @@ npm run test:ui          # 6 UI tests
 npm run report
 ```
 
-### Advanced Execution Options
-
-```bash
-# Run tests in parallel (faster execution)
-npx playwright test --workers=4
-
-# Run tests with specific browser
-npx playwright test --project=chromium
-npx playwright test --project=firefox
-npx playwright test --project=webkit
-
-# Run single test file
-npx playwright test tests/positive-functional.spec.js
-
-# Run tests matching pattern
-npx playwright test --grep="Simple"
-
-# Run tests in debug mode
-npx playwright test --debug
-
-# Run with custom timeout
-npx playwright test --timeout=60000
-
-# Run and update snapshots
-npx playwright test --update-snapshots
-```
-
-### Continuous Integration Commands
-
-```bash
-# Run tests in CI environment
-npm run test:ci
-
-# Generate JSON report for CI tools
-npx playwright test --reporter=json
-
-# Run with code coverage
-npm run test:coverage
-```
-
----
+ 
 
 ## 📚 Test Case Documentation
 
